@@ -273,7 +273,7 @@ h1 {
   max-width: 470px;
 
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 11px;
 
