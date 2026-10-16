@@ -68,36 +68,54 @@ a {
 }
 
 /* IMAGEM DE FUNDO */
+/* =========================================================
+   IMAGEM DE FUNDO
+   ========================================================= */
+
 .page-shell::before {
   content: "";
+
   position: fixed;
   inset: 0;
+
   z-index: -2;
+
   background:
     url("./assets/academia-bg.png")
     center center / cover no-repeat;
+
   transform: scale(1.015);
 }
 
-/* OVERLAY ESCURO */
+
+/* =========================================================
+   OVERLAY ESCURO
+   ========================================================= */
+
 .background-overlay {
   position: fixed;
   inset: 0;
+
   z-index: -1;
+
   pointer-events: none;
 
+  /*
+    Overlay propositalmente mais escuro
+    para manter leitura dos botões e textos.
+  */
   background:
     radial-gradient(
       circle at 50% 28%,
-      rgba(240, 90, 33, 0.14) 0%,
-      rgba(42, 47, 51, 0.62) 38%,
-      rgba(9, 10, 11, 0.93) 100%
+      rgba(240, 90, 33, 0.10) 0%,
+      rgba(20, 22, 24, 0.72) 38%,
+      rgba(6, 7, 8, 0.94) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(9, 10, 11, 0.66) 0%,
-      rgba(9, 10, 11, 0.82) 55%,
-      rgba(9, 10, 11, 0.97) 100%
+      rgba(6, 7, 8, 0.72) 0%,
+      rgba(6, 7, 8, 0.82) 52%,
+      rgba(6, 7, 8, 0.96) 100%
     );
 }
 
